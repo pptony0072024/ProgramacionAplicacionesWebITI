@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarea: Google (estructura HTML)</title>
+</head>
+<body align="center">
+  <!-- Header con logo y enlaces auxiliares -->
+  <header>
+    <div id="top-bar">
+      <nav aria-label="Enlaces superiores">
+        <a href="#">Gmail</a>
+        <a href="#">Imágenes</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenedor principal -->
+  <main>
+    <!-- Área del logo -->
+    <section id="logo-area" aria-label="Logo de Google">
+      <!-- Imagen de ejemplo -->
+      <img src="googlelogo_color_272x92dp.png" alt="Logo de Google (placeholder)" width="272" height="92">
+    </section>
+
+    <!-- Formulario de búsqueda -->
+    <section id="search-area" aria-label="Buscador">
+      <form action="https://www.google.com/search" method="get" role="search">
+        <!-- Input de búsqueda -->
+        <label for="search-input" class="visually-hidden">Buscar</label>
+        <input id="search-input" name="q" type="search" placeholder="Buscar en Google" autocomplete="off" required>
+
+        <!-- Botones -->
+        <div id="buttons">
+          <button type="submit">Buscar con Google</button>
+          <button type="button" onclick="window.location.href='https://www.google.com/doodles'">Voy a tener suerte</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Área de idioma / pie de búsqueda (ejemplo) -->
+    <aside id="extra-links" aria-label="Enlaces adicionales">
+      <p>Disponible en: <a href="#">Español</a> • <a href="#">English</a></p>
+    </aside>
+  </main>
+
+  <!-- Pie de página con información legal y enlaces -->
+  <footer>
+    <small>&copy; 2025 - Ejemplo educativo. Este archivo solo replica la <em>estructura</em> HTML (sin estilos ni activos reales).</small>
+    <nav aria-label="Enlaces del pie de página">
+      <a href="#">Privacidad</a>
+      <a href="#">Condiciones</a>
+      <a href="#">Preferencias</a>
+    </nav>
+  </footer>
+
+  <!-- Notas: clase "visually-hidden" puede definirse en CSS para accesibilidad si se agrega estilos -->
+</body>
+</html>
